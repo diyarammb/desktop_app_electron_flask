@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Stacker by Umar Farooq</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+  </head>
+  <style>
+    .scrollable-container {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col">
+          <h5 class="text-center text-success">
+            Select Folder Containting Excel Files
+          </h5>
+
+          <div class="row">
+            <div class="col"></div>
+            <div class="col mt-4">
+              <div class="card">
+                <p class="text-primary text-center m-1">Upload Files:</p>
+                <div class="custom-file m-4">
+                  <input
+                    type="file"
+                    class="custom-file-input"
+                    id="uploadMultipleFiles"
+                    multiple
+                    onchange="handleFileSelection()"
+                  />
+                </div>
+                <div id="fileNamesDisplay" class="scrollable-container"></div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <!-- dnc files sections -->
+          <div class="row">
+            <div class="col"></div>
+            <div class="col mt-4">
+              <div class="card">
+                <p class="text-primary text-center m-1">Upload DNC File (Optional):</p>
+                <div class="custom-file m-4">
+                  <input type="file" class="custom-file-input" id="fileInput" />
+                  <br />
+                  <p id="dncfile"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+
+          <!-- submit button sections -->
+          <div class="row">
+            <div class="col"></div>
+            <div class="col mt-4">
+              <div class="card">
+                <button
+                  onclick="storeMultipleXlsxFile()"
+                  class="btn btn-success m-4"
+                >
+                  Upload Files
+                </button>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <p class="text-center m-1">Developed By Umar Farooq</p>
+      </div>
+    </div>
+
+    <script src="../js/App.js"></script>
+     
+  </body>
+</html>

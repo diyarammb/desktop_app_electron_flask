@@ -1,0 +1,32 @@
+Step 1 Electronjs APP Running Command
+   	Npm Run watch 
+
+Step 2 Flask installation
+    pip install flask
+    Run Flask File
+Step 3 install sqlit
+   pip install sqlite3
+   
+
+Step 4 Compile the python file to an exe
+     pyinstaller App.py --onefile --add-data 'D:\laptop_data\F\Python\Scraping\My Scraping Projects\GreggCBrawle\josecastillo87\List Stacker Current\Current\venv\Lib\site-packages\usaddress\usaddr.crfsuite:./usaddress'
+
+Step 5 Using electron-packager to package our app
+      npm install --save-dev electron
+      npm install electron-packager -g
+      electron-packager . ListStacker --arch=x64 --asar
+
+Step 5: Create a main installer file .msi
+      convert both python exe and fronted exe into setup using Inno Setup 
+
+
+follow this post: https://stackoverflow.com/questions/67146654/how-to-compile-python-electron-js-into-desktop-app-exe
+
+
+
+
+
+     
+
+
+

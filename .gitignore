@@ -1,0 +1,4 @@
+*.db
+uploads
+uploads_dnc_files
+test/*/

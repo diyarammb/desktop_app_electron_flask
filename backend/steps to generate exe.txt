@@ -1,0 +1,2 @@
+venv/Scripts/activate
+pyinstaller App.py --onefile --add-data "D:/laptop_data/F/Python/Scraping/My Scraping Projects/GreggCBrawle/josecastillo87/List Stacker Current/Current/backend/venv/Lib/site-packages/usaddress/usaddr.crfsuite;./usaddress"

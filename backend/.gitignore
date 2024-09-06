@@ -1,0 +1,9 @@
+venv
+build
+aaApp.exe
+__pycache__
+dist
+uploads
+uploads_dnc_files
+*.db
+*.spec

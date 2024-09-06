@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>List Stacker by Umar Farooq</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <style>
+    .scrollable-container {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+  <body class="bg-gray">
+    <div class="row mt-4">
+      <div class="col-md-3 m-t">
+        <div class="m-4">
+        <input type="radio" disabled name="a" class="bg-warning form-check-input m-2"> <Label>First Name</Label><br>
+        <input type="radio" disabled name="a" class="bg-success form-check-input m-2"> <Label>Last Name</Label><br>
+        <input type="radio" disabled name="a" class="bg-primary form-check-input m-2"> <Label>phone</Label><br>
+        <input type="radio" disabled name="a" class="bg-danger form-check-input m-2"> <Label>Address</Label><br>
+        <input type="radio" disabled name="a" class="bg-secondary form-check-input m-2"> <Label>Street Address</Label><br>
+        <input type="radio" disabled name="a" class="bg-info form-check-input m-2"> <Label>City</Label><br>
+        <input type="radio" disabled name="a" class="bg-dark form-check-input m-2"> <Label>State</Label><br>
+        <input type="radio" disabled name="a" class="bg-pink form-check-input m-2"> <Label>Zipcode</Label><br>
+        <input type="radio" disabled name="a" class="bg-wheat form-check-input m-2"> <Label>Unit</Label>
+      </div>
+      </div>
+
+      <div class="col-md-6 mt-4">
+        <div class="card" id="radio-form">
+          <h5 class="card-header text-center text-success" id="file_name">
+            file.xlsx
+          </h5>
+          <div class="card-header d-flex align-items-center justify-content-center">
+            <div class="container pt-2">
+                <div class="row ">
+                  <span class="col">Address Column Parts:</span>
+                  <div class="col text-end">
+                    <label class="switch btn-color-mode-switch">
+                      <input
+                        value="1"
+                        id="multiple_address_parts"
+                        name="multiple_address_parts"
+                        type="checkbox"
+                        onchange="fill_column_layout(current_file_info)"
+                      />
+                      <label
+                        class="btn-color-mode-switch-inner"
+                        data-off="Single"
+                        data-on="Multiple"
+                        for="multiple_address_parts"
+                      ></label>
+                    </label>
+                  </div>
+                
+              </div>
+              </div>
+          </div>
+
+          <div class="card-body m-4 scrollable-container">
+            <div class="row">
+              <div class="col-md-12" id="scrollable-container"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <button
+            onclick="load_next_file_if_exists()"
+            class="btn btn-success w-25 mt-4"
+            id="loadNextPagebutton"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-danger mt-4 text-center">Developed By Umar Farooq</div>
+
+    <script src="../js/Radio.js"></script> 
+  </body>
+</html>

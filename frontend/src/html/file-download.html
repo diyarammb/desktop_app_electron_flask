@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>List Stacker by Umar Farooq</title>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="row mt-4 card">
+      <div class="row m-4">
+        <div class="col">
+          <span>Save Output files to a folder</span>
+        </div>
+        <div class="col">
+          <div class="col">
+            <button id="download" class="btn btn-success">
+              Select Folder
+            </button>
+            <button id="folder_open_button" class="btn btn-primary disabled">
+              Open Folder
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="alert" class="d-none" role="alert">
+        <span id="alert-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      </div>
+    </div>
+  </div>
+  <script src="../js/save_dialog_util.js"></script>
+</body>
+
+</html>

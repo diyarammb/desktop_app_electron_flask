@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>List Stacker by Umar Farooq</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-4">
+        <h5 class="text-center text-success">Filter Data and Add Keywords</h5>
+      </div>
+      <div class="card mt-4 p-4">
+        <div class="row mt-4">
+          <div class="col m-2"><h6>Mode</h6></div>
+
+          <div class="col-md-5">
+            <label class="switch btn-color-mode-switch">
+              <input
+                value="1"
+                id="color_mode"
+                name="color_mode"
+                type="checkbox"
+              />
+              <label
+                class="btn-color-mode-switch-inner"
+                data-off="Address"
+                data-on="Phone"
+                for="color_mode"
+              ></label>
+            </label>
+          </div>
+        </div>
+        <!-- keyword sections  -->
+        <div class="row">
+          <div class="col m-2"><h6>Keyword</h6></div>
+          <div class="col">
+            <div id="button-3" class="button r">
+              <input class="checkbox" type="checkbox" id="keyword" />
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Extract Duplicates -->
+        <div class="row">
+          <div class="col m-2"><h6>Extract Duplicates from Multiple Lists</h6></div>
+          <div class="col">
+            <div id="button-3" class="button r">
+              <input class="checkbox" type="checkbox" id="extractDuplicates" />
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Remove DNC records -->
+        <div class="row">
+          <div class="col m-2"><h6>Remove DNC records</h6></div>
+          <div class="col">
+            <div id="button-3" class="button r">
+              <input class="checkbox" type="checkbox" id="removeDNCRecords" />
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Combine Multiple List -->
+        <div class="row">
+          <div class="col m-2"><h6>Combine Multiple List</h6></div>
+          <div class="col">
+            <div id="button-3" class="button r">
+              <input class="checkbox" type="checkbox" id="combineAllLists" />
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Remove Old Processed Records -->
+        <div class="row">
+          <div class="col m-2"><h6>Remove Old Processed Records</h6></div>
+          <div class="col">
+            <div id="button-3" class="button r">
+              <input class="checkbox" type="checkbox" id="removeOldProcessedRecords" />
+              <div class="knobs"></div>
+              <div class="layer"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- add keyword sections -->
+        <!-- keyword sections  -->
+        <div class="row mt-4">
+          <div class="col">
+            <input
+              type="text"
+              id="myInput"
+              placeholder="Enter Keyword"
+              class="m-2 form-control"
+            />
+          </div>
+          <div class="col">
+            <span onclick="newElement()" class="btn btn-primary m-2"
+              >Add Keyword</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- append data  -->
+      <div class="mt-4">
+        <ul id="myUL"></ul>
+      </div>
+      <div class="mt-4">
+        <button
+          onclick="sendKeywordListData()"
+          class="btn btn-success w-25"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+    <script src="../js/App.js"></script>
+  </body>
+</html>
